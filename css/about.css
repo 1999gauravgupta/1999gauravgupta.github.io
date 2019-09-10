@@ -1,0 +1,30 @@
+.about .l{
+    background: #f7484e;
+}
+
+.about .r{
+    padding:100;
+    background:white;
+}
+
+.about .r .heading{
+    font-size: 1.5em;
+}
+
+.education i{
+    float: left;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+}
+.skills .colored{
+    color:#f7484e;
+}
+
+.about a:hover{
+    padding-bottom: 2;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}

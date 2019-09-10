@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Bold'), url('../fonts/ProximaNova-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Semibold'), url('../fonts/ProximaNova-Semibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Regular'), url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+body{
+    background: #2d2d2d;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+.bold{
+    font-family:'Proxima Nova Bold';
+    font-weight:normal;
+}
+
+.semi{
+    font-family: 'Proxima Nova Semibold';
+    font-weight: normal;
+}
+
+.regular{
+    font-family: 'Proxima Nova Regular';
+    font-weight: normal;
+}
+
+.containers{
+    height:100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.container{
+    height:100%;
+    width:50%;
+    float: left;
+}
+
+.containers .l{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containers .l img{
+    width:255px;
+    height:114.5px;
+}
+
+.containers .r{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
