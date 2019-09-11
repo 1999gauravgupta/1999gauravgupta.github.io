@@ -21,7 +21,6 @@
 
 body{
     background: #2d2d2d;
-    scroll-snap-type: y mandatory;
 }
 
 .bold{
@@ -65,6 +64,10 @@ body{
 
 /* PC ONLY */
 @media only screen and (min-width: 835px) {
+    body{
+        scroll-snap-type: y mandatory;
+    }
+    
     .containers{
         height:100vh;
         width: 100vw;
