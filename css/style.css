@@ -21,8 +21,6 @@
 
 body{
     background: #2d2d2d;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
 
@@ -41,16 +39,9 @@ body{
     font-weight: normal;
 }
 
-.containers{
-    height:100vh;
-    width: 100vw;
-    scroll-snap-align: start;
-}
-
-.container{
-    height:100%;
-    width:50%;
-    float: left;
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .containers .l{
@@ -65,11 +56,29 @@ body{
     height:114.5px;
 }
 
-.containers .r{
-    overflow-y: scroll;
+/* MOBILE ONLY */
+@media only screen and (max-width: 834px) {
+    .containers .l{
+        height:100vh;
+    }
 }
 
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+/* PC ONLY */
+@media only screen and (min-width: 835px) {
+    .containers{
+        height:100vh;
+        width: 100vw;
+        scroll-snap-align: start;
+    }
+
+    .container{
+        height:100%;
+        width:50%;
+        float: left;
+    }
+
+    .containers .r{
+        overflow-y: scroll;
+    }
 }
+

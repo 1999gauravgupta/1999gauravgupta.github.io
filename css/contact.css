@@ -3,7 +3,6 @@
 }
 
 .contact .r{
-    padding:100;
     background: white;
 }
 
@@ -19,4 +18,18 @@
     padding-bottom: 2;
     text-decoration: none;
     border-bottom: 2px solid white;
+}
+
+/* MOBILE ONLY */
+@media only screen and (max-width: 834px) {
+    .contact .r{
+        padding:50;
+    }
+}
+
+/* PC ONLY */
+@media only screen and (min-width: 835px) {
+    .contact .r{
+        padding:100;
+    }
 }

@@ -14,3 +14,16 @@
     text-decoration: none;
     border-bottom: 2px solid white;
 }
+
+/* MOBILE ONLY */
+@media only screen and (max-width: 834px) {
+    .home{
+        height:100vh;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .home img{
+        height:200px;
+    }
+}
